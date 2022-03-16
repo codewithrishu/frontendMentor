@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
-:root{
- 
---Soft-blue: hsl(215, 51%, 70%);
---Cyan: hsl(178, 100%, 50%);
---Very-dark-blue-mainBG: hsl(217, 54%, 11%);
---Very-dark-blue-cardBG: hsl(216, 50%, 16%); 
---Very-dark-blue-line: hsl(215, 32%, 27%);
---White: hsl(0, 0%, 100%)
+:root {
+
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-mainBG: hsl(217, 54%, 11%);
+    --Very-dark-blue-cardBG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%)
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Outfit', sans-serif;
     font-size: 18px;
 }
 
-.card-container{
+.card-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,77 +25,82 @@ body{
     background-color: var(--Very-dark-blue-mainBG);
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     padding: 10px;
     flex-basis: 340px;
-    background-color:var(--Very-dark-blue-cardBG);
+    background-color: var(--Very-dark-blue-cardBG);
     border-radius: 12px
 }
 
-.img-box{
+.img-box {
     width: 330px;
     padding: 14px;
 
 }
 
-img{
+img {
     width: 100%;
     border-radius: 12px;
     object-fit: contain;
 }
 
-.info{
- 
+.info {
+
     padding: 8px 14px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-     
+
 }
 
-.heading{
+.heading {
     color: var(--White);
     font-size: 19px;
 }
-.heading:hover{
+
+.heading:hover {
     color: var(--Cyan);
     cursor: pointer;
 }
+
 .para,
 .days,
 .creater-info {
     color: var(--Soft-blue);
 }
-.extra-info{
+
+.extra-info {
     display: flex;
-    justify-content:space-between; 
-      border-bottom: 1px solid var(--Very-dark-blue-line);
-      padding-bottom: 20px;
-      font-size: 17px;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--Very-dark-blue-line);
+    padding-bottom: 20px;
+    font-size: 17px;
 }
 
-.days, .value{
+.days,
+.value {
     display: flex;
     justify-content: center;
     gap: 8px;
 }
 
-.days img{
-   width: 19px;
-}
-.value img{
-    width: 12px;
-    
+.days img {
+    width: 19px;
 }
 
-.value{
+.value img {
+    width: 12px;
+
+}
+
+.value {
     color: var(--Cyan);
 }
 
 
-.creater{
+.creater {
     display: flex;
     gap: 16px;
     padding: 10px 14px 20px 14px;
@@ -103,23 +108,33 @@ img{
     align-items: center;
 }
 
-.avatar{
+.avatar {
     width: 30px;
     height: 30px;
     border: 1px solid var(--White);
     border-radius: 50%;
 }
 
-.creater-info{
+.creater-info {
     font-size: 18px;
 }
 
 
-.creater-info span{
+.creater-info span {
     color: var(--White);
-    
+
 }
-.creater-info span:hover, .heading:hover {
+
+.creater-info span:hover,
+.heading:hover {
     color: var(--Cyan);
     cursor: pointer;
+}
+
+
+footer {
+    padding: 20px;
+    font-size: 15px;
+    background-color: var(--Very-dark-blue-mainBG);
+    color: var(--Soft-blue);
 }
