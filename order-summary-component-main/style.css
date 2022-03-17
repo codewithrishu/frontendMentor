@@ -1,38 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
 
-:root{
---Pale-blue: hsl(225, 100%, 94%);
---Bright-blue: hsl(245, 75%, 52%);
---Very-pale-blue: hsl(225, 100%, 98%);
---Desaturated-blue: hsl(224, 23%, 55%);
---Dark-blue: hsl(223, 47%, 23%);
---white:#ffffff;
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --white: #ffffff;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
-    font-family: 'Red Hat Display',sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
 }
-h2{
+
+h2 {
     margin: 0;
     padding: 0;
     font-weight: 900;
     color: var(--Dark-blue);
 }
-p{
+
+p {
     color: grey;
-    font-weight:500 ;
-    padding-bottom:8px ;
+    font-weight: 500;
+    padding-bottom: 8px;
     line-height: 20px;
 }
-.flex-column{
+
+.flex-column {
     display: flex;
     flex-direction: column;
 }
 
-.card-container{
+.card-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,30 +46,30 @@ p{
     background-color: var(--Pale-blue)
 }
 
-.card{
+.card {
     flex-basis: 350px;
     background-color: var(--white);
     border-radius: 12px;
 }
 
-.img-box{
+.img-box {
     width: 100%;
 }
 
-.img-box img{
+.img-box img {
     width: 100%;
     object-fit: contain;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
 
-.order-summary{
+.order-summary {
     padding: 30px;
     text-align: center;
     font-size: 14px;
 }
 
-.annual-plan{
+.annual-plan {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -76,34 +79,34 @@ p{
     border-radius: 8px;
 }
 
-.avatar{
+.avatar {
     width: 40px;
     height: 40px;
 }
 
-.avatar img{
-   width: 40px;
-   height: 40px;
+.avatar img {
+    width: 40px;
+    height: 40px;
 }
 
-.change{
+.change {
     margin-left: auto;
 }
 
-.info{
+.info {
     gap: 2px;
     font-size: 14px;
     color: grey;
 }
 
-.info-heading{
+.info-heading {
     color: var(--Dark-blue);
     font-weight: 900;
 }
 
-.buttons{
+.buttons {
     padding: 22px 0 0 0;
-    gap: 14px;   
+    gap: 14px;
 }
 
 .proceed-btn,
@@ -112,11 +115,11 @@ p{
     border-radius: 8px;
     border: none;
     background-color: var(--Bright-blue);
-    color: var(--white) 
+    color: var(--white)
 }
 
-.proceed-btn{
-box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+.proceed-btn {
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
 }
 
 .cncl-btn {
@@ -130,11 +133,12 @@ box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
     cursor: pointer;
 }
 
-.change a:hover{
+.change a:hover {
     color: var(--Desaturated-blue);
     cursor: pointer;
     text-decoration: none;
 }
+
 .change a:hover {
     text-decoration: none;
 }
@@ -145,8 +149,7 @@ box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
     cursor: pointer;
 }
 
-footer{
+footer {
     padding: 10px;
-     background-color: var(--Pale-blue)
-
+    background-color: var(--Pale-blue)
 }
