@@ -7,17 +7,15 @@
 --Very-pale-blue: hsl(225, 100%, 98%);
 --Desaturated-blue: hsl(224, 23%, 55%);
 --Dark-blue: hsl(223, 47%, 23%);
-
+--white:#ffffff;
 }
 
 body{
-
     margin: 0;
     padding: 0;
     font-family: 'Red Hat Display',sans-serif;
 }
 h2{
-    
     margin: 0;
     padding: 0;
     font-weight: 900;
@@ -29,6 +27,11 @@ p{
     padding-bottom:8px ;
     line-height: 20px;
 }
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
 .card-container{
     display: flex;
     justify-content: center;
@@ -37,22 +40,19 @@ p{
     height: 100vh;
     object-fit: contain;
     background-repeat: no-repeat;
-     background-color: #dfe6ff;
+    background-color: var(--Pale-blue)
 }
 
 .card{
-    display: flex;
-    flex-direction: column;
     flex-basis: 350px;
-   background-color: #ffffff;
+    background-color: var(--white);
     border-radius: 12px;
-    
-
 }
+
 .img-box{
     width: 100%;
-
 }
+
 .img-box img{
     width: 100%;
     object-fit: contain;
@@ -61,67 +61,60 @@ p{
 }
 
 .order-summary{
-   
     padding: 30px;
-    display: flex;
-    flex-direction: column;
     text-align: center;
     font-size: 14px;
 }
+
 .annual-plan{
     display: flex;
     align-items: center;
     gap: 15px;
-      background: #f7f9ff;
-      border-radius: 11px;
+    background: var(--Very-pale-blue);
+    border-radius: 11px;
     padding: 16px;
     border-radius: 8px;
-    
 }
+
 .avatar{
- 
     width: 40px;
     height: 40px;
 }
+
 .avatar img{
    width: 40px;
    height: 40px;
 }
+
 .change{
     margin-left: auto;
 }
 
-
 .info{
-    display: flex;
-    flex-direction: column;
     gap: 2px;
     font-size: 14px;
     color: grey;
-
 }
+
 .info-heading{
-     color: var(--Dark-blue);
+    color: var(--Dark-blue);
     font-weight: 900;
 }
+
 .buttons{
-    display: flex;
-    flex-direction: column;
     padding: 22px 0 0 0;
-    gap: 14px;
-    
-   
+    gap: 14px;   
 }
+
 .proceed-btn,
 .cncl-btn {
     padding: 12px;
     border-radius: 8px;
     border: none;
     background-color: var(--Bright-blue);
-    color: wheat;
-    
-   
+    color: var(--white) 
 }
+
 .proceed-btn{
 box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
 }
@@ -130,7 +123,6 @@ box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
     background: transparent;
     color: grey;
     font-weight: 500;
-
 }
 
 .proceed-btn:hover {
@@ -151,4 +143,10 @@ box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
     color: var(--Dark-blue);
     font-weight: 700;
     cursor: pointer;
+}
+
+footer{
+    padding: 10px;
+     background-color: var(--Pale-blue)
+
 }
