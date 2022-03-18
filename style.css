@@ -36,11 +36,14 @@ p{
     display:flex;
     justify-content: center;
     align-items:center;
+ padding: 10px;
+  background-color: var(--Very-light-gray-background-headings-buttons);
  
 
 }
 
 .card{
+ 
     display: flex;
     width: 850px;
    border-radius: 10px;
@@ -124,6 +127,11 @@ button{
     border: 2px solid var(--Very-light-gray-background-headings-buttons);
     color: var(--Very-light-gray-background-headings-buttons);
     cursor: pointer;
+}
+footer{
+    padding:20px;
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    color: var(--Very-dark-cyan);
 }
 
 @media only screen and (max-width: 480px){
