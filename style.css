@@ -54,7 +54,7 @@ p{
 .car-detail-card{
     display: flex;
     flex-direction: column;
-    width: 375px;
+    flex-basis: 375px;
     gap: 60px;
     
     
@@ -139,7 +139,7 @@ footer{
     
     .card{
         flex-direction: column;
-       flex-basis: 370px;
+      
     }
     .detials-box{
         gap: 20px;
