@@ -1,147 +1,163 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
-:root{
---Bright-orange: hsl(31, 77%, 52%) ;
---Dark-cyan: hsl(184, 100%, 22%);
---Very-dark-cyan: hsl(179, 100%, 13%) ;
---Neutral-Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
---Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%)
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Neutral-Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%)
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
-    font-family: 'Lexend Deca',sans-serif;
-    
+    font-family: 'Lexend Deca', sans-serif;
+
     color: var(--Very-light-gray-background-headings-buttons);
 }
-h2{
-    font-family: 'Big Shoulders Display',cursive;
-    
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+
     font-size: 35px;
 }
-h2, p{
+
+h2,
+p {
     margin: 0;
     padding: 0;
 }
-p{
+
+p {
     font-weight: 400;
     font-size: 15px;
     color: var(--Neutral-Transparent-white-paragraphs);
     line-height: 24px;
 }
 
-.card-container{
-    display:flex;
+.card-container {
+    display: flex;
     justify-content: center;
-    align-items:center;
- padding: 10px;
-  background-color: var(--Very-light-gray-background-headings-buttons);
- 
+    align-items: center;
+    padding: 20px;
+    background-color: var(--Very-light-gray-background-headings-buttons);
+
 
 }
 
-.card{
- 
+.card {
+
     display: flex;
     width: 850px;
-   border-radius: 10px;
-   overflow: hidden;
-   
+    border-radius: 10px;
+    overflow: hidden;
+
 }
 
-.car-detail-card{
+.car-detail-card {
     display: flex;
     flex-direction: column;
     flex-basis: 375px;
     gap: 60px;
-    
-    
+
+
 }
-.inner-box{
+
+.inner-box {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    
-   
+
+
 }
-.detials-box{
+
+.detials-box {
     padding: 40px;
-    
+
     display: flex;
     gap: 80px;
     flex-direction: column;
- 
+
 
 }
-.sedans{
+
+.sedans {
     background-color: var(--Bright-orange);
 }
 
-.suvs{
+.suvs {
     background-color: var(--Dark-cyan);
 }
-.luxury{
+
+.luxury {
     background-color: var(--Very-dark-cyan);
 }
-.btn{
+
+.btn {
     display: flex;
-    align-items:baseline;
-    
+    align-items: baseline;
+
 }
-.sedans button{
+
+.sedans button {
     color: var(--Bright-orange);
 }
-.suvs button{
+
+.suvs button {
     color: var(--Dark-cyan);
 }
 
-.luxury button{
+.luxury button {
     color: var(--Very-dark-cyan);
 }
-button{
+
+button {
     padding: 15px 30px;
-   background-color: var(--Very-light-gray-background-headings-buttons);
-   font-family: 'Lexend Deca',
-   sans-serif;
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    font-family: 'Lexend Deca',
+        sans-serif;
     border: none;
     border-radius: 100px;
 }
 
+.sedans button:hover,
+.suvs button:hover,
+.luxury button:hover {
+    border: 2px solid var(--Very-light-gray-background-headings-buttons);
+    color: var(--Very-light-gray-background-headings-buttons);
+    cursor: pointer;
+}
 
-.sedans button:hover{
+.sedans button:hover {
     background-color: var(--Bright-orange);
-    border: 2px solid var(--Very-light-gray-background-headings-buttons);
-    color: var(--Very-light-gray-background-headings-buttons);
-    cursor: pointer;
+
 }
+
 .suvs button:hover {
-    background-color: var(--Dark-cyan); ;
-    border: 2px solid var(--Very-light-gray-background-headings-buttons);
-    color: var(--Very-light-gray-background-headings-buttons);
-    cursor: pointer;
+    background-color: var(--Dark-cyan);
 }
+
+
 .luxury button:hover {
     background-color: var(--Very-dark-cyan);
-    border: 2px solid var(--Very-light-gray-background-headings-buttons);
-    color: var(--Very-light-gray-background-headings-buttons);
-    cursor: pointer;
 }
-footer{
-    padding:20px;
+
+footer {
+    padding: 20px;
     background-color: var(--Very-light-gray-background-headings-buttons);
     color: var(--Very-dark-cyan);
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 480px) {
 
-    
-    .card{
+
+    .card {
         flex-direction: column;
-      
+
     }
-    .detials-box{
+
+    .detials-box {
         gap: 20px;
     }
 
