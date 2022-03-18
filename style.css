@@ -13,5 +13,128 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Lexend Deca',sans-serif;
+    
+    color: var(--Very-light-gray-background-headings-buttons);
+}
+h2{
     font-family: 'Big Shoulders Display',cursive;
+    
+    font-size: 35px;
+}
+h2, p{
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--Neutral-Transparent-white-paragraphs);
+    line-height: 24px;
+}
+
+.card-container{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+
+}
+
+.card{
+    display: flex;
+    width: 850px;
+   border-radius: 10px;
+   overflow: hidden;
+   
+}
+
+.car-detail-card{
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    gap: 60px;
+    
+    
+}
+.inner-box{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+   
+}
+.detials-box{
+    padding: 40px;
+    
+    display: flex;
+    gap: 80px;
+    flex-direction: column;
+ 
+
+}
+.sedans{
+    background-color: var(--Bright-orange);
+}
+
+.suvs{
+    background-color: var(--Dark-cyan);
+}
+.luxury{
+    background-color: var(--Very-dark-cyan);
+}
+.btn{
+    display: flex;
+    align-items:baseline;
+    
+}
+.sedans button{
+    color: var(--Bright-orange);
+}
+.suvs button{
+    color: var(--Dark-cyan);
+}
+
+.luxury button{
+    color: var(--Very-dark-cyan);
+}
+button{
+    padding: 15px 30px;
+   background-color: var(--Very-light-gray-background-headings-buttons);
+   font-family: 'Lexend Deca',
+   sans-serif;
+    border: none;
+    border-radius: 100px;
+}
+
+
+.sedans button:hover{
+    background-color: var(--Bright-orange);
+    border: 2px solid var(--Very-light-gray-background-headings-buttons);
+    color: var(--Very-light-gray-background-headings-buttons);
+    cursor: pointer;
+}
+.suvs button:hover {
+    background-color: var(--Dark-cyan); ;
+    border: 2px solid var(--Very-light-gray-background-headings-buttons);
+    color: var(--Very-light-gray-background-headings-buttons);
+    cursor: pointer;
+}
+.luxury button:hover {
+    background-color: var(--Very-dark-cyan);
+    border: 2px solid var(--Very-light-gray-background-headings-buttons);
+    color: var(--Very-light-gray-background-headings-buttons);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 480px){
+
+    
+    .card{
+        flex-direction: column;
+       flex-basis: 370px;
+    }
+    .detials-box{
+        gap: 20px;
+    }
+
 }
