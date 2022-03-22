@@ -19,44 +19,56 @@ h1, p{
      padding: 5px;
      margin: 0;
 }
+
+h5, .card p{
+    margin: 2px;
+    padding: 0;
+    font-size: 15px;
+}
+
 h1{
     font-weight: 700;
     font-size: 38px;
     color: var(--Very-Dark-Magenta);
    
 }
-p{
+.name p{
     font-size: 12px;
     color: grey;
     line-height: 20px;
     font-weight: 400;
 }
 
+.card p{
+    line-height: 22px;
+}
+
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .header{
     display: flex;
     align-items: center;
-    padding: 100px;
+    padding:60px;
     gap: 25px;
     background-image: url(/images/bg-pattern-top-desktop.svg);
     object-fit: cover;
     background-repeat: no-repeat;
     justify-content: space-around;
+   
 }
 .info {
     width: 34%;
+  
     
 }
 .rating-cards{
     display: flex;
     flex-direction: column;
-  text-align: center;
+    text-align: center;
     gap: 22px;
     width: 38%;
 }
@@ -84,3 +96,64 @@ p{
      display: flex;
     justify-content: flex-end;
 }
+
+.middle{
+    margin-top: 30px;
+}
+
+.bottom{
+   margin-top: 60px;
+}
+
+.profile-cards{
+    display: flex;
+   padding: 0 140px;
+    gap: 30px;
+    
+
+}
+
+.card1{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 10px;
+     
+}
+.card2{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 10px;
+
+}
+.card3{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 10px;
+
+}
+
+.card-head{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 12px 20px;
+}
+
+.card-body{
+    padding: 10px 20px;
+    color: var(--Light-Grayish-Magenta)
+}
+
+ .avatar img {
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+        border-radius: 50%;
+        
+} 
