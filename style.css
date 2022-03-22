@@ -13,5 +13,74 @@ body{
     padding: 0;
     font-family: 'Spartan',
     sans-serif;
-    font-size: 15px;
+   
+}
+h1, p{
+     padding: 5px;
+     margin: 0;
+}
+h1{
+    font-weight: 700;
+    font-size: 38px;
+    color: var(--Very-Dark-Magenta);
+   
+}
+p{
+    font-size: 12px;
+    color: grey;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    gap: 25px;
+    background-image: url(/images/bg-pattern-top-desktop.svg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    justify-content: space-around;
+}
+.info {
+    width: 34%;
+    
+}
+.rating-cards{
+    display: flex;
+    flex-direction: column;
+  text-align: center;
+    gap: 22px;
+    width: 38%;
+}
+.rate-card{
+    display: flex;
+    width: 75%;
+    padding: 15px 8px 15px 25px;
+    background-color:var(--Light-Grayish-Magenta);
+    background-repeat: repeat-x;
+    font-size: 10px;
+    align-items: center;
+    gap: 20px;
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+    border-radius: 5px;
+
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.left{
+     display: flex;
+    justify-content: flex-end;
 }
